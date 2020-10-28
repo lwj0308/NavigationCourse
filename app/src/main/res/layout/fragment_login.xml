@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LoginFragment" />
+    <Button
+        android:id="@+id/btn_to_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册界面"/>
+    <Button
+        android:id="@+id/btn_to_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="忘记密码界面"/>
+    <Button
+        android:id="@+id/btn_to_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户协议界面"/>
+
+</LinearLayout>

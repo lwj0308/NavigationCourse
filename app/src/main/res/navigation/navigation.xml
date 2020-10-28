@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.linlinlin.navigationcourse.LoginFragment">
+
+        <action
+            android:id="@+id/to_register_from_login"
+            app:destination="@id/register_fragment"
+            app:enterAnim="@anim/slide_from_right_left_in"
+            app:exitAnim="@anim/slide_from_right_left_out"
+            app:popEnterAnim="@anim/slide_from_left_right_in"
+            app:popExitAnim="@anim/slide_from_left_right_out" />
+
+        <action
+            android:id="@+id/to_forget_from_login"
+            app:destination="@id/forget_fragment" />
+        <action
+            android:id="@+id/to_agreement_activity_from_login"
+            app:destination="@id/agreement_activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.linlinlin.navigationcourse.RegisterFragment">
+
+        <action
+            android:id="@+id/action_register_fragment_to_avatarVerityFragment"
+            app:destination="@id/avatarVerityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forget_fragment"
+        android:name="com.linlinlin.navigationcourse.ForgetFragment" />
+
+    <activity
+        android:id="@+id/agreement_activity"
+        android:name="com.linlinlin.navigationcourse.AgreementActivity" />
+    <fragment
+        android:id="@+id/avatarVerityFragment"
+        android:name="com.linlinlin.navigationcourse.AvatarVerityFragment"
+        android:label="fragment_avatar_verity"
+        tools:layout="@layout/fragment_avatar_verity">
+        <action
+            android:id="@+id/action_avatarVerityFragment_to_login_fragment"
+            app:destination="@id/login_fragment"
+            app:popUpTo="@id/login_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

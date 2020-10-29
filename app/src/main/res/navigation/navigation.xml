@@ -11,11 +11,7 @@
 
         <action
             android:id="@+id/to_register_from_login"
-            app:destination="@id/register_fragment"
-            app:enterAnim="@anim/slide_from_right_left_in"
-            app:exitAnim="@anim/slide_from_right_left_out"
-            app:popEnterAnim="@anim/slide_from_left_right_in"
-            app:popExitAnim="@anim/slide_from_left_right_out" />
+            app:destination="@id/register_fragment" />
 
         <action
             android:id="@+id/to_forget_from_login"
@@ -34,7 +30,11 @@
     </fragment>
     <fragment
         android:id="@+id/forget_fragment"
-        android:name="com.linlinlin.navigationcourse.ForgetFragment" />
+        android:name="com.linlinlin.navigationcourse.ForgetFragment"
+        app:enterAnim="@anim/slide_from_right_left_in"
+        app:exitAnim="@anim/slide_from_right_left_out"
+        app:popEnterAnim="@anim/slide_from_left_right_in"
+        app:popExitAnim="@anim/slide_from_left_right_out" />
 
     <activity
         android:id="@+id/agreement_activity"

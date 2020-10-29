@@ -14,4 +14,17 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="用户协议" />
+    <ImageView
+        android:id="@+id/image"
+        android:transitionName="hero_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="inputTn"
+        android:hint="请输入姓名" />
 </LinearLayout>

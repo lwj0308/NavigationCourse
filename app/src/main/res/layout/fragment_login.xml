@@ -7,10 +7,12 @@
     tools:context=".LoginFragment">
 
 
-    <TextView
+    <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LoginFragment" />
+        android:transitionName="inputTn"
+        android:hint="请输入姓名" />
     <Button
         android:id="@+id/btn_to_register"
         android:layout_width="match_parent"
@@ -26,5 +28,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="用户协议界面"/>
+    <ImageView
+        android:id="@+id/image"
+        android:transitionName="hero_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
 
 </LinearLayout>
